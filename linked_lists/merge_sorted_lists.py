@@ -3,6 +3,12 @@ from linked_list import insert_after
 
 
 def merge_two_sorted_lists(lst1, lst2):
+    """
+    The worst-case corresponds to the case when the lists are of comparable length, so the time complexity is O(n + m).
+    In the best-case, one list is much shorter than the other and all its entries appear at the beginning of
+    the merged list.
+    Since we reuse the existing nodes, the space complexity is O(1)
+    """
 
     dummy_head = tail = ListNode()  # head and tail start pointing to the same dummy node, then tail converges
     while lst1 and lst2:
