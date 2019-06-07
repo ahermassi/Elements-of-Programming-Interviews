@@ -23,3 +23,9 @@ def deleter_after(node):
     Delete the node past this one. Assume node is not a tail
     """
     node.next = node.next.next
+
+
+def print_linked_list(lst):
+    while lst:
+        print(lst.data, end=' ')
+        lst = lst.next
