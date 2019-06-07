@@ -1,4 +1,3 @@
-from queue import Queue
 from list_node import ListNode
 from linked_list import insert_after, print_linked_list
 
