@@ -1,5 +1,5 @@
 from list_node import ListNode
-from linked_list import insert_after
+from linked_list import insert_after, print_linked_list
 
 
 def merge_two_sorted_lists(lst1, lst2):
@@ -33,6 +33,13 @@ if __name__ == '__main__':
 
     insert_after(lst2, ListNode(11))
 
+    print("List 1: ")
+    print_linked_list(lst1)
+
+    print("\nList 2: ")
+    print_linked_list(lst2)
+
     res = merge_two_sorted_lists(lst1, lst2)
-    print(res.data)
+    print("\nLists sorted and merged: ")
+    print_linked_list(res)
 
